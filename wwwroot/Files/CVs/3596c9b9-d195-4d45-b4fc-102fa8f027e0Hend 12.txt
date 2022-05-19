@@ -1,0 +1,263 @@
+ 	Task  2
+
+
+            //Console.WriteLine("Please Enter Your Name: ");
+            //   string Name= Console.ReadLine();
+            //Console.WriteLine("Plese Enter Your Degree: ");
+
+            //int x = int.Parse(Console.ReadLine());
+
+            //if (x>=0 && x<=49)
+            //{
+            //    Console.WriteLine(   "Hi :{0}" + " Your Degree Is: F" ,Name );
+            //}
+            //else if (x>=50 && x<=69)
+            //{
+            //    Console.WriteLine("Hi :{0}" + " Your Degree Is: D", Name);
+            //}
+            //else if (x >= 70 && x <= 79)
+            //{
+            //    Console.WriteLine("Hi :{0}" + " Your Degree Is: C", Name);
+            //}
+            //else if (x >= 80 && x <= 89)
+            //{
+            //    Console.WriteLine("Hi :{0}" + " Your Degree Is: B", Name);
+            //}
+            //else if (x >= 90 && x <= 100)
+            //{
+            //    Console.WriteLine("Hi :{0}" + " Your Degree Is: A", Name);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Your Input Is Error");
+            //}
+
+            //#region Task2(Calculator)
+            //Console.WriteLine("Enter FirstNumber: " );
+            //  int N1=int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter SecondNumber: ");
+            //int N2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Your Opretor: ");
+            // string x = Console.ReadLine();
+
+            //switch (x)
+            //{
+            //    case "+":
+            //        Console.WriteLine("Your Result: {0}", N1+N2);
+            //        break;
+            //    case "-":
+            //        Console.WriteLine("Your Result: {0}", N1 - N2);
+            //        break;
+            //    case "/" :
+            //        Console.WriteLine("Your Result: {0}", N1 / N2);
+            //        break;
+            //    case "*" :
+            //        Console.WriteLine("Your Result: {0}", N1 * N2);
+            //        break;
+            //    default:
+            //        Console.WriteLine("Error");
+            //        break;
+            //}
+
+            //#endregion
+
+
+
+            // Task3(Shap Calculation Option)
+
+            //Console.WriteLine("Choose Your Option");
+            //Console.WriteLine("1-Area Of Circle"); 
+
+            //Console.WriteLine("2-Circumference Of Circle");
+            //Console.WriteLine("3-Area Of Squar");
+            //Console.WriteLine("4-Circumference Of Squar");
+            //Console.WriteLine("5-Area Of Triangle ");
+            //Console.WriteLine("6-Circumference Of Triangle");
+            //Console.WriteLine("Your Choose Is: ");
+            //string x = Console.ReadLine();
+
+            //switch (x)
+            //{
+            //    case "1" :
+            //        Console.WriteLine("Please Enter Diameter OF Circle: ");
+            //        double d = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Area Of Ciecle = {0}", (Math.PI)*(d/2)*(d/2));
+            //            break;
+
+            //    case "2":
+            //        Console.WriteLine("Please Enter Diameter OF Circle: ");
+            //        double D = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Circumference Of Ciecle = {0}", (Math.PI) * D );
+            //        break;
+
+
+
+            //    case "3":
+            //        Console.WriteLine("Please Enter Length Of The side: ");
+            //        double X = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Area Of Squa = {0}", X*X);
+            //        break;
+
+
+            //    case "4":
+            //        Console.WriteLine("Please Enter Length Of The Side : ");
+            //        double L = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Circumference Of Squar = {0}", L*4);
+            //        break;
+
+
+            //    case "5":
+            //        Console.WriteLine("Please Enter Base Length Of Triangle: ");
+            //        double B = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Please Enter Height Of Triangle: ");
+            //        double H = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Area Of Triangle = {0}", B*H/2);
+            //        break;
+
+
+            //    case "6":
+            //        Console.WriteLine("Please Enter Side1 OF Triangle: ");
+            //        double S1 = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Please Enter Side2 OF Triangle: ");
+            //        double S2 = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Please Enter Side3 OF Triangle: ");
+            //        double S3 = double.Parse(Console.ReadLine());
+
+            //        Console.WriteLine("Circumference Of Triangle = {0}", S1+S2+S3);
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("error");
+            //        break;
+            //}
+
+            #region Task4(Tables)
+
+            for (int y = 1; y <=10; y++)
+            {
+                Console.WriteLine("Table{0}", y);
+                for (int i = 1; i <=12; i++)
+                {
+                    Console.WriteLine("{0}*{1}={2}", i, y, i * y);
+                }
+                Console.WriteLine("*********************");
+            }
+            #endregion
+
+
+
+            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+        }
+    }
+}
+
+
+
+
+
+
+						Task3
+
+
+
+namespace Task3
+{
+    class Program
+    {
+        static void Sum(int[] y)
+        {
+
+            int res = 0;
+            for (int i = 0; i < y.Length; i++)
+            {
+                res += y[i];
+            }
+            Console.WriteLine( "the sum of elements is {0}",res);
+
+            
+        }
+
+        static void countspace(string y)
+        {
+            int x = 0;
+            string y1;
+            for (int i = 0; i < y.Length; i++)
+            {
+                y1 = y.Substring(i, 1);
+                if (y1==" ")
+                {
+                    x++;
+                }
+                
+            }
+            Console.WriteLine(x);
+        }
+
+        static void CheckPrime(int x)
+        {
+            int y;
+            for (int i = 2; i < x; i++)
+            {
+                y = x % i;
+                if (y==0)
+                {
+                    Console.WriteLine("not");
+                }
+
+            }
+            Console.WriteLine("{0}  is prime number",x);
+        }
+
+        static void power(int x  ,int y)
+        {
+            int z=1;
+            for (int i = 1; i < y; i++)
+            {
+                z *= x;
+               
+            }
+            Console.WriteLine("the number {0} ^(to the power) {1}={2}",x,y,z );
+        }
+
+        static void Swap( ref int x, ref int  )
+        {
+            int z;
+            z = x;
+            x = y;
+            y = z;
+            Console.WriteLine(x);
+            
+        }
+
+
+
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("ENTER arry ");
+            //int[] arr = new int[int.Parse(Console.ReadLine())];
+
+            //Console.WriteLine("Enter value number");
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine("enter value number" + (i+1));
+            //    arr[i] = int.Parse(Console.ReadLine());
+            ////}
+            //int[] arr = new int[3] { 2, 1, 6 };
+            //Sum(arr);
+
+            //countspace("sdddc gghhh ghhj");
+
+
+            //CheckPrime(31);
+
+            //power(4, 5);
+            Swap(ref  x, ref y);
+
+            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+
+
+            
+
+        }
+    }
+} 

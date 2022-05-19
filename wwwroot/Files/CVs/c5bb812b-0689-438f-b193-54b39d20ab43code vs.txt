@@ -1,0 +1,18 @@
+
+تفاصيل استكشاف الأخطاء وإصلاحها
+
+في حالة الاتصال بالمسؤول الذي تتبعه، أرسل هذه المعلومات إليه.
+نسخ المعلومات إلى الحافظة   
+  
+Request Id:  ad3a4861-7652-4e93-bc28-9e1c17378e02 
+ 
+Correlation Id:  a0a28c99-c5f8-48fa-b7e9-7467d57a8f80 
+
+Timestamp:  2021-07-11T23:51:33Z 
+ 
+Message:  AADSTS165000: Invalid Request: The request tokens do not match the user context. One or more of the user context values (cookies; form fields; headers) were incorrect or invalid, these values should not be copied between requests or user sessions; always maintain the ALL of the supplied values across a complete single user flow. The request did not return all of the form fields. Failure Reasons:[Token is invalid;] 
+     
+
+وضع علامة على أخطاء تسجيل الدخول للمراجعة: تمكين وضع العلامة 
+  
+إذا كنت تخطط للحصول على مساعدة حيال هذه المشكلة، فبادر بتمكين وضع العلامة ومحاولة إعادة إنتاج الخطأ خلال 20 دقيقة. توفر الأحداث التي يتم تعليمها التشخيص ويتم تصعيدها لجذب انتباه المسؤول.

@@ -1,0 +1,187 @@
+﻿@model Templet.BLL.Models.EmployeeVM;
+@using Microsoft.Extensions.Localization
+@using Templet.Language
+
+@inject IStringLocalizer<SharedResource> SharedLocalizer
+
+
+@{
+    ViewBag.Title = SharedLocalizer["Create"];
+
+}
+
+<h2>Create Employee</h2>
+
+<form asp-controller="Employee" asp-action="Create" method="post" enctype="multipart/form-data" class="form-group">
+    <label asp-for="Name">Employee Name</label>
+    <input type="text" asp-for="Name" class="form-control" />
+    <span class="text-danger" asp-validation-for="Name"></span>
+    <br /><br />
+    <label asp-for="Salary">Employee Salary</label>
+    <input type="text" asp-for="Salary" class="form-control" />
+    <span class="text-danger" asp-validation-for="Salary"></span>
+    <br />
+
+    <label asp-for="Adress">Employee Address</label>
+    <input type="text" asp-for="Adress" class="form-control" />
+    <span class="text-danger" asp-validation-for="Adress"></span>
+    <br />
+    <label asp-for="Email">Employee Email</label>
+    <input type="email" asp-for="Email" class="form-control" />
+    <span class="text-danger" asp-validation-for="Email"></span>
+    <br />
+
+    <label asp-for="HireData">Hire Date</label>
+    <input type="date" asp-for="HireData" class="form-control" />
+    <span class="text-danger" asp-validation-for="HireData"></span>
+    <br />
+
+    <label asp-for="Notes">Notes</label>
+    <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+
+    <span class="text-danger" asp-validation-for="Salary"></span>
+    <br />
+
+    <div class="demo-checkbox">
+        <input type="checkbox" asp-for="IsActive" checked="">
+        <label asp-for="IsActive">IsActive</label>
+        <span class="text-danger" asp-validation-for="IsActive"></span>
+
+
+    </div>
+    <br />
+
+    <select asp-for="DepartmentID" asp-items="(SelectList)ViewBag.DepartmentList">
+        <option>choose Department</option>
+    </select>
+
+    <span class="text-danger" asp-validation-for="DepartmentID"></span>
+    <br />
+    <label>country</label>
+    <select id="CountryList" asp-items="(SelectList)ViewBag.CountryList">
+        <option>choose Country</option>
+    </select>
+    <br />
+
+    <select asp-for="DistrictID" asp-items="(SelectList)ViewBag.DistrictList">
+        <option>choose District</option>
+    </select>
+    <br />
+    <label asp-for="Cv">Upload Cv</label>
+    <input type="file" asp-for="Cv" class="form-control" />
+    <span class="text-danger" asp-validation-for="Cv"></span>
+    <br /><br />
+
+    <label asp-for="Img">Upload Photo</label>
+    <input type="file" asp-for="Img" class="form-control" />
+    <span class="text-danger" asp-validation-for="Img"></span>
+    <br /><br />
+
+
+    @*<select id="CityList">
+            <option>choose City</option>
+        </select>
+        <br />
+
+
+        <select asp-for="DistrictID">
+            <option>choose District</option>
+        </select>
+        <br />*@
+
+
+
+    <center>
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </center>
+
+
+</form>
+
+<script src="~/plugins/jquery/jquery.min.js"></script>
+
+<script src="~/plugins/jquery-validation/jquery.validate.js"></script>
+<script src="~/plugins/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+@*<script>
+        $(function () {
+            $("#CountryID").change(function () {
+                var countryID = $("#CountryID").val();
+
+                $.ajax({
+
+                    type: "POST",
+                    url: "/Employee/GetCityDataByCountryId",
+                    data: { cntryID: countryID },
+                    success: function (res) {
+
+                        $.each(res, function (i, e) {
+
+                            $("#CityID").append("<option value='" + e.ID + "'>" + e.CityName + "</option>");
+
+                        });
+                    }
+                });
+
+            });
+        });
+
+    </script>*@
+
+
+@*<script>*@
+
+<!--$(function () {
+
+        $("#CountryList").change(function () {
+
+            var CountryId = $("#CountryList option:selected").val();
+
+            $("#CityList").empty();
+            $("#CityList").append("<option>Choose City</option>");
+
+            $.ajax({
+
+                type: "POST",
+                url: "/Employee/GetCityDataByCountryId",
+                data: { CtryId: CountryId },
+                success: function (res) {
+
+                    $.each(res, function (i, e) {
+                        $("#CityList").append("<option value='" + e.ID + "'>" + e.CityName + "</option>")
+                    });
+
+                }
+
+            });
+        });
+
+
+        $("#CityList").change(function () {
+
+            var CityId = $("#CityList option:selected").val();
+
+            $("#DistrictID").empty();
+            $("#DistrictID").append("<option>Choose District</option>");
+
+            $.ajax({
+
+                type: "POST",
+                url: "/Employee/GetDistrictDataByCityId",
+                data: { CtyId: CityId },
+                success: function (res) {
+
+                    $.each(res, function (i, e) {
+                        $("#DistrictID").append("<option value='" + e.ID + "'>" + e.DistrictName + "</option>")
+                    });
+
+                }
+
+            });
+            //});
+
+
+        });
+
+
+</script>-->

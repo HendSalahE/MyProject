@@ -1,0 +1,159 @@
+﻿@model IQueryable<Templet.BLL.Models.DepartmentVM>
+
+
+@{
+    ViewBag.Title = "Department";
+
+}
+
+
+
+<style>
+    th {
+        text-align: center !important;
+    }
+</style>
+@section DataTableStyle{
+    <link href="~/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="~/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" />
+}
+
+@*<h2>Index</h2>
+    <a asp-controller="Department" asp-action="Create">Add Department</a>
+    <br />*@
+@*<form asp-action="Index" asp-controller="Department" method="get">
+        <div class="row">
+            <div class="col-lg-10">
+                <input type="text" placeholder="Search By Name" name="Dname" />
+            </div>
+            <div class="col-lg-2">
+                <input type="submit" value="Search" class="btn btn-info" />
+            </div>
+        </div>
+    </form>*@
+
+
+
+@*<table class="table table-striped table-bordered text-center ">
+        <tr>
+            <th class="text-center">ID</th>
+            <th class="text-center">Department Name</th>
+            <th class="text-center">Department Code</th>
+            <th class="text-center">Edit</th>
+            <th class="text-center">Delete</th>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.DepartmentName</td>
+                <td>@item.DepartmentCode</td>
+                <td><a asp-controller="Department" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success">Edit</a></td>
+                <td><a asp-controller="Department" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-success">Delete</a></td>
+
+
+            </tr>
+        }
+
+
+    </table>*@
+
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>Welcome To Department</h2>
+                    <br />
+                    <a asp-controller="Department" asp-action="Create">Add Department</a>
+                    <ul class="header-dropdown m-r--5">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li><a href="javascript:void(0);">Action</a></li>
+                                <li><a href="javascript:void(0);">Another action</a></li>
+                                <li><a href="javascript:void(0);">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover js-basic-example dataTable text-center  font-weight-bold">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Department Name</th>
+                                    <th>Department Code</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.ID</td>
+                                        <td>@item.DepartmentName</td>
+                                        <td>@item.DepartmentCode</td>
+                                        <td><a asp-controller="Department" asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success">Edit</a></td>
+                                        <td><a asp-controller="Department" asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a></td>
+
+
+                                    </tr>
+                                }
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section DataTableScripts{
+    <script src="~/plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="~/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+
+    <script src="~/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="~/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.js-basic-example').DataTable({
+                responsive: true,
+                paging: true,
+                pageLength: 5,
+                bSort: true,
+                bFilter: true,
+                bLengthChange: false,
+                //bInfo: false,
+                lengthMenu: [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+
+            });
+
+            var table = $('.js-basic-example').DataTable();
+
+            new $.fn.dataTable.Buttons(table, {
+                buttons: [
+                    'copy', 'excel', 'pdf', 'csv', 'print'
+                ]
+            });
+
+            table.buttons().container()
+                .appendTo($('.col-sm-6:eq(0)', table.table().container()));
+
+        });
+    </script>
+}

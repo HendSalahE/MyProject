@@ -1,0 +1,67 @@
+﻿@model Templet.BLL.Models.EmployeeVM;
+
+
+
+
+@{
+    ViewBag.Title = "Delete Employee";
+
+}
+
+<h2>Delete Employee</h2>
+
+
+<form asp-controller="Employee" asp-action="Delete" method="post" class="form-group">
+    <label asp-for="ID">ID</label>
+    <input type="hidden" class="form-control" asp-for="ID" disabled/>
+    <br />
+    <label asp-for="Name">Employee Name</label>
+    <input type="text" asp-for="Name" disabled class="form-control" />
+    
+    <br /><br />
+    <label asp-for="Salary">Employee Salary</label>
+    <input type="text" asp-for="Salary" disabled class="form-control" />
+    
+    <br />
+
+    <label asp-for="Adress">Employee Address</label>
+    <input type="text" asp-for="Adress" disabled class="form-control" />
+    
+    <br />
+    <label asp-for="Email">Employee Email</label>
+    <input type="email" asp-for="Email" disabled class="form-control" />
+    
+    <br />
+
+    <label asp-for="HireData">Hire Date</label>
+    <input type="text" asp-for="HireData" disabled class="form-control" />
+    
+    <br />
+
+    <label asp-for="Notes">Notes</label>
+    <textarea asp-for="Notes" class="form-control" rows="4"></textarea>
+
+    
+    <br />
+
+    <div class="demo-checkbox">
+        <input type="checkbox" asp-for="IsActive" disabled checked="">
+        <label asp-for="IsActive">IsActive</label>
+        
+
+
+    </div>
+    <br />
+
+   
+    
+    <center>
+        <input type="submit" value="Delete" class="btn btn-primary" />
+    </center>
+
+
+</form>
+
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
