@@ -1,0 +1,15 @@
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\Templet.DAL.deps.json
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\Templet.DAL.dll
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\ref\Templet.DAL.dll
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\Templet.DAL.pdb
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.csproj.AssemblyReference.cache
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.AssemblyInfoInputs.cache
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.AssemblyInfo.cs
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.dll
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\ref\Templet.DAL.dll
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.pdb
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\Templet.DAL.runtimeconfig.json
+C:\Users\ECC\source\repos\Templet\Templet.DAL\bin\Debug\net5.0\Templet.DAL.runtimeconfig.dev.json
+C:\Users\ECC\source\repos\Templet\Templet.DAL\obj\Debug\net5.0\Templet.DAL.genruntimeconfig.cache
