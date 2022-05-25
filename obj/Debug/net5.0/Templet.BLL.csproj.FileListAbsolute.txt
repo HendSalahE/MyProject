@@ -1,0 +1,15 @@
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\Templet.BLL.deps.json
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\Templet.BLL.dll
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\ref\Templet.BLL.dll
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\Templet.BLL.pdb
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\Templet.DAL.dll
+C:\Users\ECC\source\repos\Templet\Templet.BLL\bin\Debug\net5.0\Templet.DAL.pdb
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.csproj.AssemblyReference.cache
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.AssemblyInfoInputs.cache
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.AssemblyInfo.cs
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.csproj.CopyComplete
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.dll
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\ref\Templet.BLL.dll
+C:\Users\ECC\source\repos\Templet\Templet.BLL\obj\Debug\net5.0\Templet.BLL.pdb
